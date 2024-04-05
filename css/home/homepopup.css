@@ -1,0 +1,105 @@
+.homenews {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.homenews-content {
+  background-color: #fefefe;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;  
+  max-width: 900px;  
+  display: flex;
+  position: relative;
+}
+
+.homenews-close {
+  color: #aaaaaa;
+  position: absolute;
+  top: 10px;
+  right: 10px; 
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.homenews-close:hover,
+.homenews-close:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+.popup-content {
+  display: flex; 
+  align-items: center; 
+}
+
+.popup-inside-image {
+  flex: 1; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  
+}
+
+.popup-inside-image img {
+  width: 300px; 
+  height: 300px; 
+  object-fit: cover; 
+  margin-top: 30px; 
+  margin-bottom: 30px;
+}
+
+.popup-text {
+  flex: 1; 
+}
+
+.popup-text h2 {
+  font-size: 15px;
+  margin-top: 30px; 
+  margin-bottom: 40px;
+  margin-right: 10px;
+  margin-left: 30px;
+  text-align: left;  
+  letter-spacing: 5px; 
+}
+
+.popup-text p {
+  font-family: "Raleway", sans-serif;
+  text-transform: none; 
+  font-size: 13px;
+  line-height: 1.5;  
+  text-align: left;  
+  margin-top: 20px; 
+  margin-right: 50px;
+  margin-left: 30px;
+  margin-bottom: 30px;
+  letter-spacing: 1px; 
+}
+
+.popup-text .read-more-btn {
+  font-family: "Raleway", sans-serif;
+  font-size: 12px;
+  text-decoration: none;
+  color: #000000;
+  background-color: #ffffff;
+  border: 1px solid #000000; 
+  border-radius: 0px;
+  padding: 10px;
+  transition: background-color 0.3s ease;
+  margin-left: 10px;
+}
+
+.popup-text .read-more-btn:hover {
+  color: #ffffff;
+  background-color: #000000;
+}
+

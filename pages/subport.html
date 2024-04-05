@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Learning Compass - Suburb Portal</title>
+    <link rel="stylesheet" href="../css/subport/subport.css" />
+    <link rel="stylesheet" href="../css/general/scrolltop.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+  <header id="header"></header>
+  <script src="../js/general/fetchheader.js" defer></script>
+  <section class="sectionWel">
+    <h1>What is Suburban Portal?</h1> 
+    <p>
+        A Suburban Portal is an online platform or tool designed 
+        to provide information on suburban areas related to the selected country 
+        among the top five migrating into Victoria, Australia. 
+        It serves as a centralized hub where parents can view 
+        the surrounding schools and its details. 
+    </p>
+  </section>
+
+  <section class="section1" id="section1">
+    <h1>School Locater</h1>
+    <div class="container">
+      <div class="map-bar">
+        <div class="tab-container">
+          <div class="tab" onclick="showContent('tab1')" data-tab="tab1">China</div>
+          <div class="tab" onclick="showContent('tab2')" data-tab="tab2">Philippines / India</div>
+          <div class="tab" onclick="showContent('tab3')" data-tab="tab3">Sri Lanka</div>
+          <div class="tab" onclick="showContent('tab4')" data-tab="tab4">Vietnam</div>
+        </div>
+      </div>
+      <div class="text-container" id="textContainer">
+        <div id="tab1Content" style="display: none;">
+            <p>Monash</p>
+        </div>
+        <div id="tab2Content" style="display: none;">
+            <p>Wyndham</p>
+        </div>
+        <div id="tab3Content" style="display: none;">
+          <p>Casey</p>
+        </div>
+        <div id="tab4Content" style="display: none;">
+          <p>Brimbank</p>
+        </div>
+      </div>
+      <div class="dropdown" id="dropdownTab1"  data-tab="tab1">
+        <select id="dropdownMenuTab1">
+          <option value="">Select a Suburb</option> 
+          <option value="">Show All</option> 
+          <option value="Ashwood">Ashwood</option>
+          <option value="Clayton">Clayton</option>
+          <option value="Glen waverley"> Glen waverley</option>
+          <option value="Hughesdale">Hughesdale</option>
+          <option value="Mount waverley">Mount waverley</option>
+          <option value="Mulgrave">Mulgrave </option>
+          <option value="Oakleigh">Oakleigh</option>
+          <option value="Oakleigh east">Oakleigh east</option>
+          <option value="Oakleigh south">Oakleigh south</option>
+          <option value="Wheelers hill">Wheelers hill</option>
+        </select>
+      </div>
+      <div class="dropdown" id="dropdownTab2"  data-tab="tab2">
+        <select id="dropdownMenuTab2">
+          <option value="">Select a Suburb</option> 
+          <option value="">Show All</option> 
+          <option value="Hoppers crossing">Hoppers crossing</option>
+          <option value="Hoppers crossing north">Hoppers crossing north</option>
+          <option value="Little river">Little river</option>
+          <option value="Manor lakes">Manor lakes</option>
+          <option value="Point cook">Point cook</option>
+          <option value="Tarneit">Tarneit</option>
+          <option value="Truganina">Truganina</option>
+          <option value="Truganina south">Truganina south</option>
+          <option value="Werribee">Werribee</option>
+          <option value="Werribee north">Werribee north</option>
+          <option value="Wyndham vale">Wyndham vale</option>
+        </select>
+      </div>
+      <div class="dropdown" id="dropdownTab3"  data-tab="tab3">
+        <select id="dropdownMenuTab3">
+          <option value="">Select a Suburb</option> 
+          <option value="">Show All</option> 
+          <option value="Berwick">Berwick</option>
+          <option value="Botanic ridge">Botanic ridge</option>
+          <option value="Clyde">Clyde</option>
+          <option value="Clyde north">Clyde north</option>
+          <option value="Cranbourne">Cranbourne</option>
+          <option value="Cranbourne east">Cranbourne east</option>
+          <option value="Cranbourne north">Cranbourne north</option>
+          <option value="Cranbourne south">Cranbourne south</option>
+          <option value="Cranbourne west">Cranbourne west</option>
+          <option value="Devon meadows">Devon meadows</option>
+          <option value="Doveton">Doveton</option>
+          <option value="Endeavour hills">Endeavour hills</option>
+          <option value="Hampton park">Hampton park</option>
+          <option value="Harkaway">Harkaway</option>
+          <option value="Hallam">Hallam</option>
+          <option value="Lynbrook">Lynbrook</option>
+          <option value="Lyndhurst">Lyndhurst</option>
+          <option value="Narre warren">Narre warren</option>
+          <option value="Narre warren north">Narre warren north</option>
+          <option value="Narre warren south">Narre warren south</option>
+          <option value="Pearcedale">Pearcedale</option>
+          <option value="Tooradin">Tooradin</option>
+        </select>
+      </div>
+      <div class="dropdown" id="dropdownTab4"  data-tab="tab4">
+        <select id="dropdownMenuTab4">
+          <option value="">Select a Suburb</option> 
+          <option value="">Show All</option> 
+          <option value="Albion">Albion</option>
+          <option value="Albanvale">Albanvale</option>
+          <option value="Ardeer">Ardeer</option>
+          <option value="Cairnlea">Cairnlea</option>
+          <option value="Delahey">Delahey</option>
+          <option value="Deer park">Deer park</option>
+          <option value="Derrimut">Derrimut</option>
+          <option value="Kealba">Kealba</option>
+          <option value="Keilor">Keilor</option>
+          <option value="Keilor downs">Keilor downs</option>
+          <option value="Kings park">Kings park</option>
+          <option value="St albans">St albans</option>
+          <option value="St albans south">St albans south</option>
+          <option value="Sunshine">Sunshine</option>
+          <option value="Sunshine north">Sunshine north</option>
+          <option value="Sunshine south west">Sunshine south west</option>
+          <option value="Sunshine west">Sunshine west</option>
+          <option value="Sydenham">Sydenham</option>
+          <option value="Taylors lakes">Taylors lakes</option>        
+        </select>
+      </div>
+      <div class="map" id="map"></div>
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet.markercluster/dist/leaflet.markercluster.js"></script>
+  <script src="../js/subport/subport.js" defer></script>
+
+  <button id="scrollupbtn" onclick="topFunction()">↑</button>
+  <script src="../js/general/scrolltop.js" defer></script>
+  
+  <footer id="footer"></footer>
+  <script src="../js/general/fetchfooter.js" defer></script>
+
+</body>
+</html>
