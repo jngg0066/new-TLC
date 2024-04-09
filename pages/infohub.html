@@ -29,6 +29,9 @@
 
     <!-- Template Stylesheet -->
     <link href="../css/style.css" rel="stylesheet">
+
+    <!-- Responsive Stylesheet -->
+    <script src="https://code.highcharts.com/highcharts.js"></script>
 </head>
 
 <body>
@@ -60,14 +63,17 @@
                     <div class="row g-0">
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                             <div class="h-100 d-flex flex-column justify-content-center p-5">
-                                <h1 class="mb-4">Make Appointment</h1>
-
+                                <h1>Migrations in Austar</h1>
+                                <p class="mb-4">Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+                                <ul>
+                                    <li>Point 1: Description of point 1.</li>
+                                    <li>Point 2: Description of point 2.</li>
+                                    <li>Point 3: Description of point 3.</li>
+                                </ul>
                             </div>
                         </div>
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
-                            <div class="position-relative h-100">
-                                <img class="position-absolute w-100 h-100 rounded" src="../img/appointment.jpg" style="object-fit: cover;">
-                            </div>
+                            <div id="container1" class="position-relative h-100 rounded" style="object-fit: cover;"></div>
                         </div>
                     </div>
                 </div>
@@ -81,9 +87,7 @@
                 <div class="bg-light rounded">
                     <div class="row g-0">
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
-                            <div class="position-relative h-100">
-                                <img class="position-absolute w-100 h-100 rounded" src="../img/appointment.jpg" style="object-fit: cover;">
-                            </div>
+                            <div id="container2" class="position-relative h-100 rounded" style="object-fit: cover;"></div>
                         </div>
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                             <div class="h-100 d-flex flex-column justify-content-center p-5">
@@ -190,6 +194,8 @@
         <!-- Template Javascript -->
         <script src="../js/main.js"></script>
         <script src="../js/home/popupmodal.js"></script>
+        <script src="../js/info_hub/line_graph.js"></script>
+        <script src="../js/info_hub/bar_graph.js"></script>
     </body>
      
      
