@@ -357,6 +357,33 @@ h6,
     margin-top: -10px;
 }
 
+.collapsible {
+    background-color: #f2d8d8;
+    color: #431010;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 5px;
+}
+
+.active, .collapsible:hover {
+    background-color: #c48787;
+}
+
+.collapsible-content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1ebeb;
+}
+
+.button-text {
+    font-size: 5px; 
+}
+
 /*** Team ***/
 .team-item .team-text {
     position: absolute;
