@@ -637,7 +637,7 @@ h6,
     background-color: #d3d0d0;
   }
   
-  .dropdown {
+  .suburb-dropdown {
     display: none; /* Initially hide dropdowns */
     margin-top: 10px; /* Adjust margin as needed */
     align-items: center; /* Center the dropdown horizontally */
