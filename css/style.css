@@ -404,7 +404,19 @@ h6,
 }
 
 
-/*** Testimonial ***/
+/*** News ***/
+.news-image {
+    width: 50px; /* Adjust the width as per your preference */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Adjust the margin as needed */
+    border-radius: 10px; /* Add border radius for rounded corners */
+}
+
+/* CSS to align the image and heading horizontally */
+.image-heading-container {
+    display: flex;
+    align-items: center;
+}
 .news-carousel {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
