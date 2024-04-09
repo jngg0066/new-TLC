@@ -17,7 +17,7 @@
 
     $(document).ready(function() {
         // Fetch navbar content and insert it into the navbarContainer div
-        $("#navbarContainer").load("../pages/header-footer/navbar.html");
+        $("#navbarContainer").load("../pages/navbar-footer/navbar.html");
     });
 
 
@@ -85,7 +85,7 @@
 
     $(document).ready(function() {
         // Fetch navbar content and insert it into the navbarContainer div
-        $("#footerContainer").load("../pages/header-footer/footer.html");
+        $("#footerContainer").load("../pages/navbar-footer/footer.html");
     });
 })(jQuery);
 
