@@ -1,200 +1,272 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Learning Compass - Home</title>
-    <link rel="stylesheet" href="../css/home/home.css">
-    <link rel="stylesheet" href="../css/home/homepopup.css"> 
-    <link rel="stylesheet" href="../css/general/scrolltop.css">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
 
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@600&family=Lobster+Two:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="../css/style.css" rel="stylesheet">
 </head>
+
 <body>
-    <header id="header"></header>
-    <script src="../js/general/fetchheader.js" defer></script>
-    
-    <section class="sectionWel">
-        <h1>Welcome!</h1> 
-        <p>
-            Welcome to The Learning Compass, your dedicated platform for supporting migrant families in Victoria, Australia. We understand the journey of resettlement is filled with challenges, from navigating a new education system to understanding cultural nuances. Our mission is to empower you, the parents, with the tools and knowledge needed to ensure a smooth transition for your family.
-        </p>
-        <p>
-            Explore our site to find comprehensive guides, insightful articles, and interactive resources tailored to address the unique needs of migrant families. Whether you're seeking information on local schools, language support, or cultural integration, we're here to assist every step of the way. Let’s embark on this journey together to build a thriving future for your children in Australia. 
-        </p>
-    </section>
-    
-    <section class="section1">
-        <div class="slogan-section">
-            <img src="../assets/images/classroom.jpg" alt="Classroom" class="background-image">
-            <h2 class="slogan-text">YOUR JOURNEY. OUR SUPPORT</h2>
-        </div>
-    </section>
-    <section class="section2">
-        <div class="content">
-            <h2>Info Hub</h2>
-            <p>Discover a wealth of resources in our Info Hub, designed to help you navigate the complexities of migrating and settling in Victoria.</p>
-        </div>
-        <div class="button-container">
-            <a href="pages/infohub.html" class="info-btn">Info Hub</a>
-        </div>
-    </section>
-    <section class="section3">
-        <div class="button-container">
-            <a href="pages/subport.html" class="suburban-btn">Suburban Portal</a>
-        </div>
-        <div class="content">
-            <h2>Suburban Portal</h2>
-            <p>Find your community in Victoria with our Suburban Portal, connecting you to local services, schools, and migrant networks.</p>
-        </div>
-    </section>
-    <section class="section4">
-        <h1>News articles</h1>
-        <div class="popup-container">
-            <!-- First popup-item -->
-            <div class="popup-item">
-                <!-- Image for the first popup -->
-                <img src="../assets/images/news1.png" alt="Click to open popup" data-popup="homenewsModal1">
-                <!-- News title for the first popup -->
-                <div class="news-title"> 
-                    <h2>News Article: How I'm preparing for school in Australia</h2>
-                    <p> By Allison Chan, ABC Education</p>
-                </div>
-                <!-- Button to open the first popup -->
-                <button class="learn-more-btn" data-popup-btn="openPopupButton1">Learn More</button>
-                <!-- Modal for the first popup -->
-                <div id="homenewsModal1" class="homenews">
-                    <!-- Popup content -->
-                    <div class="homenews-content">
-                        <span class="homenews-close">&times;</span>
-                        <div class="popup-content">
-                            <div class="popup-text">
-                                <h2>How I'm preparing for school in Australia</h2>
-                                <p>
-                                    This article features young students sharing their experiences 
-                                    and provide advice for newcomers studying in Australia. 
-                                </p>
-                                <p>    
-                                    They discuss their hopes, concerns, and emphasizing the importance 
-                                    of communication skills, making friends, and adapting to the 
-                                    differences between their home countries and Australia.
-                                </p>
-                                <a href="https://www.abc.net.au/education/learn-english/how-im-preparing-for-school-in-australia/8230366" class="read-more-btn" target="_blank">>> Read More</a>
-                            </div>
-                            <div class="popup-inside-image">
-                                <img src="../assets/images/news1.png" alt="News Image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
             </div>
-            
-            <!-- Second popup-item -->
-            <div class="popup-item">
-                <!-- Image for the second popup -->
-                <img src="../assets/images/news2.png" alt="Click to open popup" data-popup="homenewsModal2">
-                <!-- News title for the third popup -->
-                <div class="news-title"> 
-                    <h2> Video: How I'm learning English on my own: students speak</h2>
-                    <p> By ABC Education</p>
-                </div>
-                <!-- Button to open the second popup -->
-                <button class="learn-more-btn" data-popup-btn="openPopupButton2">Learn More</button>
-                <!-- Modal for the second popup -->
-                <div id="homenewsModal2" class="homenews">
-                    <!-- Popup content -->
-                    <div class="homenews-content">
-                        <span class="homenews-close">&times;</span>
-                        <div class="popup-content">
-                            <div class="popup-text">
-                                <h2>Video: How I'm learning English on my own: students speak</h2>
-                                <p>This video shows content of students who learnt English on their own and 
-                                    provided various methods to help others on how they can improve their 
-                                    proficiency through. This ranged from watching movies to listening to music.</p>
-                                <a href="https://www.abc.net.au/education/learn-english/how-im-learning-english-on-my-own:-students-speak/10586908" class="read-more-btn" target="_blank">>> Watch Video</a>
-                            </div>
-                            <div class="popup-inside-image">
-                                <img src="../assets/images/news2.png" alt="News Image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        </div>
+        <!-- Spinner End -->
 
-            <!-- Third popup-item -->
-            <div class="popup-item">
-                <!-- Image for the third popup -->
-                <img src="../assets/images/news3.png" alt="Click to open popup" data-popup="homenewsModal3">
-                <!-- News title for the third popup -->
-                <div class="news-title"> 
-                    <h2>News Article: 7 Common Hurdles Faced By New Australian Visa Holders, And How To Overcome Them</h2> 
-                    <p> By AHWC</p>
-                </div>
-                <!-- Button to open the third popup -->
-                <button class="learn-more-btn" data-popup-btn="openPopupButton3">Learn More</button>
-                <!-- Modal for the third popup -->
-                <div id="homenewsModal3" class="homenews">
-                    <!-- Popup content -->
-                    <div class="homenews-content">
-                        <span class="homenews-close">&times;</span>
-                        <div class="popup-content">
-                            <div class="popup-text">
-                                <h2>7 Common Hurdles Faced By New Australian Visa Holders, And How To Overcome Them</h2>
-                                <p>There are many barriers migrants might face when 
-                                    integrating into Australia. Read this article to 
-                                    further understand the challenges faced by Australian 
-                                    immigrants as they navigate integration into their new society.
-                                </p>
-                                <a href="https://ahwc.com.au/australian-immigration-news/7-common-hurdles-faced-new-australian-visa-holders/" class="read-more-btn" target="_blank">>> Read More</a>
-                            </div>
-                            <div class="popup-inside-image">
-                                <img src="../assets/images/news3.png" alt="News Image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div id="navbarContainer"></div>  
 
-            <!-- Fourth popup-item -->
-            <div class="popup-item">
-                <!-- Image for the fourth popup -->
-                <img src="../assets/images/news4.png" alt="Click to open popup" data-popup="homenewsModal4">
-                <!-- News title for the fourth popup -->
-                <div class="news-title"> 
-                    <h2>News Article: Learn English: Aussie slang</h2> 
-                    <p> By Ann Carter & Jessie Davies</p>
-                </div>
-                <!-- Button to open the fourth popup -->
-                <button class="learn-more-btn" data-popup-btn="openPopupButton4">Learn More</button>
-                <!-- Modal for the fourth popup -->
-                <div id="homenewsModal4" class="homenews">
-                    <!-- Popup content -->
-                    <div class="homenews-content">
-                        <span class="homenews-close">&times;</span>
-                        <div class="popup-content">
-                            <div class="popup-text">
-                                <h2>Learn English: Aussie slang</h2>
-                                <p>This article offers a glimpse into Australian slangs, including common phrases, greetings, and shortened words. 
-                                    It emphasizes the informal nature of slang and how it's utilized in day-to-day discussions among friends. 
-                                    The examples encompass various aspects of Australian culture and language, providing insights into the 
-                                    distinctive nuances that are unique to Australia.
-                                </p>
-                                <a href="https://www.abc.net.au/education/learn-english/learn-english-aussie-slang/7289548" class="read-more-btn" target="_blank"> >> Read More</a>
-                            </div>
-                            <div class="popup-inside-image">
-                                <img src="../assets/images/news4.png" alt="News Image">
+        <!-- Header Start -->
+        <div class="container-fluid p-0 mb-5">
+            <div class="owl-carousel header-carousel position-relative">
+                <div class="owl-carousel-item position-relative">
+                    <img class="img-fluid" src="../img/carousel-2.jpg" alt="">
+                    <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center" style="background: rgba(0, 0, 0, .2);">
+                        <div class="container">
+                            <div class="row justify-content-start">
+                                <div class="col-10 col-lg-8">
+                                    <h1 class="display-2 text-white animated slideInDown mb-4">Make A Brighter Future For Your Child</h1>
+                                    <p class="fs-5 fw-medium text-white mb-4 pb-2"></p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <button id="scrollupbtn" onclick="topFunction()">↑</button>
-    <script src="../js/general/scrolltop.js" defer></script>
-    
-    <footer id="footer"></footer>
-    <script src="../js/general/fetchfooter.js" defer></script>
-    <script src="../js/home/homenews.js" defer></script>
-    
+        <!-- Header End -->
+
+        
+        <!-- Facilities Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Your Journey. Our Support.</h1>
+                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-primary">
+                                <span class="bg-primary"></span>
+                                <i class="fa fa-bus-alt fa-3x text-primary"></i>
+                                <span class="bg-primary"></span>
+                            </div>
+                            <div class="facility-text bg-primary">
+                                <h3 class="text-primary mb-3">School Bus</h3>
+                                <p class="mb-0">Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-success">
+                                <span class="bg-success"></span>
+                                <i class="fa fa-futbol fa-3x text-success"></i>
+                                <span class="bg-success"></span>
+                            </div>
+                            <div class="facility-text bg-success">
+                                <h3 class="text-success mb-3">Playground</h3>
+                                <p class="mb-0">Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-warning">
+                                <span class="bg-warning"></span>
+                                <i class="fa fa-home fa-3x text-warning"></i>
+                                <span class="bg-warning"></span>
+                            </div>
+                            <div class="facility-text bg-warning">
+                                <h3 class="text-warning mb-3">Healthy Canteen</h3>
+                                <p class="mb-0">Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="facility-item">
+                            <div class="facility-icon bg-info">
+                                <span class="bg-info"></span>
+                                <i class="fa fa-chalkboard-teacher fa-3x text-info"></i>
+                                <span class="bg-info"></span>
+                            </div>
+                            <div class="facility-text bg-info">
+                                <h3 class="text-info mb-3">Positive Learning</h3>
+                                <p class="mb-0">Eirmod sed ipsum dolor sit rebum magna erat lorem kasd vero ipsum sit</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Facilities End -->
+
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <h1 class="mb-4">Info Hub</h1>
+                        <p>Discover a wealth of resources in our Info Hub, designed to help you navigate the 
+                            complexities of migrating and settling in Victoria.
+                        </p>
+                        <div class="row g-4 align-items-center">
+                            <div class="col-sm-6">
+                                <a class="btn btn-primary rounded-pill py-3 px-5" href="../pages/infohub.html">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 about-img wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <img class="img-fluid w-75 rounded-circle bg-light p-3" src="img/about-1.jpg" alt="">
+                            </div>
+                            <div class="col-6 text-start" style="margin-top: -150px;">
+                                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="img/about-2.jpg" alt="">
+                            </div>
+                            <div class="col-6 text-end" style="margin-top: -150px;">
+                                <img class="img-fluid w-100 rounded-circle bg-light p-3" src="img/about-3.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Call To Action Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="bg-light rounded">
+                    <div class="row g-0">
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
+                            <div class="position-relative h-100">
+                                <img class="position-absolute w-100 h-100 rounded" src="../img/2.jpg" style="object-fit: cover;">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                            <div class="h-100 d-flex flex-column justify-content-center p-5">
+                                <h1 class="mb-4">Suburban Portal</h1>
+                                <p class="mb-4">Find your community in Victoria with our Suburban Portal, 
+                                    connecting you to local services, schools, and migrant networks.
+                                </p>
+                                <a class="btn btn-primary py-3 px-5" href="">Try It Out<i class="fa fa-arrow-right ms-2"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Call To Action End -->
+
+    <!-- News Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h1 class="mb-3">Latest News!</h1>
+                <p>Check out the relevent news articles.</p>
+            </div>
+            <div class="owl-carousel news-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="news-item bg-light rounded p-5" id="news-item-1">
+                    <p class="fs-5"> </p>
+                    <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                        <div class="ps-3">
+                            <h3 class="mb-1">How to prepare for school in Australia</h3>
+                            <span>By Allison Chan, ABC Education</span>
+                        </div>
+                    </div>
+                    <p class="fs-5"> This article features young students sharing their experiences, provide advice for 
+                        studying in Australia and emphasizing the importance of communication skills, 
+                        and adapting to the differences between their home countries and Australia.</p>
+                    <a href="https://www.abc.net.au/education/learn-english/how-im-preparing-for-school-in-australia/8230366" class="btn btn-primary btn-sm" data-target="newsModal1">Learn More</a>
+                </div>
+                <div class="news-item bg-light rounded p-5" id="news-item-2">
+                    <p class="fs-5">  </p>
+                    <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                        <div class="ps-3">
+                            <h3 class="mb-1">How to learn to English on your own?</h3>
+                            <span>By ABC Education</span>
+                        </div>
+                    </div>
+                    <p class="fs-5">This video shows content of students who learnt English on their own and 
+                        provided various methods to help others on how they can improve their 
+                        proficiency through. This ranged from watching movies to listening to music. </p>
+                    <a href="https://www.abc.net.au/education/learn-english/how-im-learning-english-on-my-own:-students-speak/10586908" class="btn btn-primary btn-sm" data-target="newsModal2">Learn More</a>
+                </div>
+                <div class="news-item bg-light rounded p-5" id="news-item-3">
+                    <p class="fs-5"> </p>
+                    <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                        <div class="ps-3">
+                            <h3 class="mb-1">7 Common Hurdles Faced By New Australian Visa Holders </h3>
+                            <span>By AHWC</span>
+                        </div>
+                    </div>
+                    <p class="fs-5"> There are many barriers migrants might face when 
+                        integrating into Australia. Read this article to 
+                        further understand the challenges faced by Australian 
+                        immigrants as they navigate integration into their new society.</p>
+                    <a href="https://ahwc.com.au/australian-immigration-news/7-common-hurdles-faced-new-australian-visa-holders/" class="btn btn-primary btn-sm" data-target="newsModal3">Learn More</a>
+                </div>
+                <div class="news-item bg-light rounded p-5" id="news-item-4">
+                    <p class="fs-5"> </p>
+                    <div class="d-flex align-items-center bg-white me-n5" style="border-radius: 50px 0 0 50px;">
+                        <div class="ps-3">
+                            <h3 class="mb-1"> Learning English: The Aussie slang</h3>
+                            <span>By Ann Carter & Jessie Davies</span>
+                        </div>
+                    </div>
+                    <p class="fs-5">This article offers a glimpse into Australian slangs, including common phrases, greetings, and shortened words. 
+                        It emphasizes the informal nature of slang and how it's utilized in day-to-day discussions among friends.</p>
+                    <a href="https://www.abc.net.au/education/learn-english/learn-english-aussie-slang/7289548" class="btn btn-primary btn-sm" data-target="newsModal4">Learn More</a>
+                </div>
+ 
+            </div>
+        </div>
+    </div>
+    <!-- News End -->
+ 
+    <div id="footerContainer"></div>  
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="../js/home/popupmodal.js"></script>
+
 </body>
+
 </html>
