@@ -243,12 +243,12 @@ h6,
 
 
 .page-header {
-    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), center center no-repeat;
+    background: linear-gradient(#00000033, #00000033), center center no-repeat;
     background-size: cover;
 }
 
 .breadcrumb-item + .breadcrumb-item::before {
-    color: rgba(255, 255, 255, .5);
+    color: #ffffff80;
 }
 
 
@@ -271,7 +271,7 @@ h6,
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(255, 255, 255, .9);
+    background: #ffffffe6;
     transition: .5s;
     z-index: 1;
 }
@@ -314,7 +314,7 @@ h6,
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(255, 255, 255, .9);
+    background: #ffffffe6;
     transition: .5s;
     z-index: 1;
 }
@@ -526,7 +526,7 @@ h6,
 }
 
 .footer .form-control {
-    border-color: rgba(255,255,255,0.5);
+    border-color: #ffffff80;
 }
 
 .footer .copyright {
@@ -542,7 +542,7 @@ h6,
 .footer .footer-menu a {
     margin-right: 15px;
     padding-right: 15px;
-    border-right: 1px solid rgba(255, 255, 255, .1);
+    border-right: 1px solid #ffffff1a;
 }
 
 .footer .copyright a:hover,
@@ -559,7 +559,7 @@ h6,
 .divider {
     width: 800px; /* Adjust width as needed */
     height: 2px; /* Adjust height as needed */
-    background-color: #ccc; /* Choose your desired color */
+    background-color: #cccccc; /* Choose your desired color */
     margin: 20px auto; /* Center the divider horizontally and adjust margin as needed */
     margin-top: 50px;
     margin-bottom: 50px;
