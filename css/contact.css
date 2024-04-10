@@ -557,4 +557,26 @@ h6,
 }
 
   
-  
+/* Section1 Styles */
+#section1 {
+    padding: 20px 0; /* Add padding above and below the section */
+    background-color: #f8f9fa; /* Light background color for the section */
+}
+
+#section1 .container {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Vertically center the items */
+    justify-content: center; /* Center the items horizontally */
+    gap: 30px; /* Adds space between the image and the text content */
+}
+
+#section1 .container .content {
+    width: 35%; /* Reduce the width of the content area */
+    padding: 20px; /* Add some padding inside the content area */
+}
+
+#section1 img {
+    width: 45%; /* Reduce the width of the image to make it more centered */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Optional: Adds rounded corners to the image */
+}
