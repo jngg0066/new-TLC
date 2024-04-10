@@ -559,23 +559,108 @@ h6,
   
 /* Section1 Styles */
 #section1 {
+    background: #ffac0c;
+    padding: 60px 0;
+}
+
+.opening-hours-img {
+    display: block;
+    margin: 0 auto;
+    width: 80%; /* Adjust the image size as needed */
+    animation: swing 5s infinite ease-in-out; /* Add your desired animation */
+}
+
+/* Swing animation for the opening hours image */
+@keyframes swing {
+    0% { transform: rotate(0deg); }
+    15% { transform: rotate(15deg); }
+    30% { transform: rotate(-10deg); }
+    40% { transform: rotate(5deg); }
+    50% { transform: rotate(0deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Updated black box with angled cut on the right */
+.business-hours {
+    background: #222;
+    padding: 40px;
+    margin-top: -15px;
+    position: relative;
+    z-index: 2; /* Make sure it's above the angled cut */
+    color: #BBB;
+}
+
+.business-hours .title {
+    font-size: 20px;
+    color: #BBB;
+    text-transform: uppercase;
+    padding-left: 5px;
+    border-left: 4px solid #ffac0c;
+}
+
+.business-hours li {
+    color: #888;
+    line-height: 30px;
+    border-bottom: 1px solid #333;
+}
+
+.business-hours li:last-child {
+    border-bottom: none;
+}
+
+/* Angle cut effect on the right side of the business hours box */
+.business-hours::after {
+    content: '';
+    width: 30px;
+    height: 100%;
+    background: #ffac0c; /* Match the section background */
+    position: absolute;
+    right: -30px;
+    top: 0;
+    z-index: -1; /* Place it behind the black box */
+    clip-path: polygon(0 0, 100% 50%, 0 100%); /* Shape of the cut */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .business-hours::after {
+        width: 20px; /* Smaller cut on smaller screens */
+        right: -20px;
+    }
+
+    .business-hours {
+        padding: 20px; /* Less padding on smaller screens */
+    }
+
+    .opening-hours-img {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+
+
+
+
+
+/* Section2 Styles */
+
+#section2 {
     padding: 20px 0; /* Add padding above and below the section */
     background-color: #f8f9fa; /* Light background color for the section */
 }
 
-#section1 .container {
+#section2 .container {
     display: flex; /* Enables flexbox layout */
     align-items: center; /* Vertically center the items */
     justify-content: center; /* Center the items horizontally */
     gap: 30px; /* Adds space between the image and the text content */
 }
 
-#section1 .container .content {
+#section2 .container .content {
     width: 35%; /* Reduce the width of the content area */
     padding: 20px; /* Add some padding inside the content area */
 }
 
-#section1 img {
+#section2 img {
     width: 45%; /* Reduce the width of the image to make it more centered */
     height: auto; /* Maintain aspect ratio */
     border-radius: 10px; /* Optional: Adds rounded corners to the image */
