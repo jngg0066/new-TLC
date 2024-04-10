@@ -76,7 +76,7 @@ function showContent(tabId) {
 
 function showDropdown(dropdownId) {
     // Hide all dropdowns
-    document.querySelectorAll('.dropdown').forEach(dropdown => dropdown.style.display = 'none');
+    document.querySelectorAll('.suburb-dropdown').forEach(dropdown => dropdown.style.display = 'none');
     // Show the specified dropdown
     document.getElementById(dropdownId).style.display = 'block';
 }
