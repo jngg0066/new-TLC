@@ -396,6 +396,11 @@ h6,
 .button-text {
     font-size: 5px; 
 }
+.classes-item .collapsible,
+.classes-item .button-text {
+    font-size: 16px !important;
+}
+
 
 
 /*** Team ***/
