@@ -579,3 +579,12 @@ h6,
   margin-left: 100px;
   min-height: 300px;
 }
+
+.divider {
+    width: 800px; /* Adjust width as needed */
+    height: 2px; /* Adjust height as needed */
+    background-color: #cccccc; /* Choose your desired color */
+    margin: 20px auto; /* Center the divider horizontally and adjust margin as needed */
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
