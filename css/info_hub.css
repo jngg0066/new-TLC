@@ -98,7 +98,20 @@ h6,
     font-family: 'Lobster Two', cursive;
 }
 
-
+.h-100 h4 {
+  font-size: 22px; /* Specify the desired font size */
+}
+.h-100 p,
+.h-100 ul li {
+  font-size: 15px; /* Specify the desired font size */
+}
+.divider {
+    margin-top: 0; 
+    margin-bottom: 0; 
+  }
+ .container-xxl {
+    margin-bottom: 0; 
+  }
 /*** Navbar ***/
 .navbar .navbar-nav .nav-link {
     padding: 30px 15px;
