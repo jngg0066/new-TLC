@@ -469,3 +469,10 @@ h6,
     justify-content: center; /* Center the map horizontally */
     align-items: center; /* Center the map vertically */
 }
+
+.container.py-5 {
+  color: #ffffff;
+  text-align: left;
+  max-width: 30%;
+  margin-left: 100px;
+}

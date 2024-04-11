@@ -572,3 +572,10 @@ h6,
     border-right: none;
 }
 
+.container.py-5 {
+  color: #ffffff;
+  text-align: left;
+  max-width: 30%;
+  margin-left: 100px;
+  min-height: 300px;
+}
